@@ -47,13 +47,19 @@ We also provide code snippets for visualizing different objects in Multi-cover t
 
 ### Multi-cover Visualization
 
-1. **Multi-cover (2D Visualization)**: To visualize Multi-cover in two dimensions, run **Multi-cover_visualization.py**. Remember to adjust the 'Vertexset' value within the code to match the coordinates of your point set.
+To visualize Multi-cover in two dimensions, run **Multi-cover_visualization.py**. Remember to adjust the 'Vertexset' value within the code to match the coordinates of your point set.
+
+### Delaunay slice Visualization
+
+- To visualize Delaunay slices, you'll need to use the `rhomboidtiling` software with the 'fslices' options to generate one more file from your oringinal point set file first, then run **plot_simplicial_complex.py**. Remember to update the related path variables in the code.
+- As an example:
+  - `4points.txt` is the original coordinates of the point set file.
+  - `4points_fslices.txt` is generated using the 'fslices' option.
 
 ### Rhomboid Tiling Visualization
 
-2. **Rhomboid Tiling**:
-   - To visualize Rhomboid tiling, you'll need to use the `rhomboidtiling` software with the 'cbifi' and 'rhomboids' options to generate two more file from your oringinal point set file first, then run **rhomboidtiling_visualization.py**
-   - As an example:
-     - `4points.txt` is the original coordinates of the point set file.
-     - `4points_rhomboids.txt` is generated using the 'rhomboids' option.
-     - `4points_rhomboidtiling.txt` is generated using the 'cbifi' option.
+- To visualize Rhomboid tiling, you'll need to use the `rhomboidtiling` software with the 'cbifi' and 'rhomboids' options to generate two more file from your oringinal point set file first, then run **rhomboidtiling_visualization.py**. Remember to update the related path variables in the code.
+- As an example:
+  - `4points.txt` is the original coordinates of the point set file.
+  - `4points_rhomboids.txt` is generated using the 'rhomboids' option.
+  - `4points_rhomboidtiling.txt` is generated using the 'cbifi' option.
