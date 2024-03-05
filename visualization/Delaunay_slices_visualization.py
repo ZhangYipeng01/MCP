@@ -161,7 +161,7 @@ for t in triangles:
     index_v_2 = vertices_index_list.index(t[2])
     triangles_get_index.append([index_v_0, index_v_1,index_v_2])
 
-visualize_simplicial_complex(vertices,edges_get_index,triangles_get_index,'Terephthalic_Delaunay(k=1).txt')
+visualize_simplicial_complex(vertices,edges_get_index,triangles_get_index,'Delaunay(k=1).txt')
 
 
 vertices = []
@@ -202,7 +202,7 @@ for t in triangles:
     index_v_2 = vertices_index_list.index(t[2])
     triangles_get_index.append([index_v_0, index_v_1,index_v_2])
 
-visualize_simplicial_complex(vertices,edges_get_index,triangles_get_index,'Terephthalic_Delaunay(k=2).txt')
+visualize_simplicial_complex(vertices,edges_get_index,triangles_get_index,'Delaunay(k=2).txt')
 
 
 vertices = []
@@ -243,5 +243,5 @@ for t in triangles:
     index_v_2 = vertices_index_list.index(t[2])
     triangles_get_index.append([index_v_0, index_v_1,index_v_2])
 
-visualize_simplicial_complex(vertices,edges_get_index,triangles_get_index,'Terephthalic_Delaunay(k=3).txt')
+visualize_simplicial_complex(vertices,edges_get_index,triangles_get_index,'Delaunay(k=3).txt')
 
