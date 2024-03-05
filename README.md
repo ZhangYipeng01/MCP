@@ -35,4 +35,8 @@ Follow these steps to prepare and process your dataset:
    - `save_path_pre`: The location where you want to save the coordinates and filtration of Delaunay slice file.
    - `rhomboidtiling_path`: The installation directory of the rhomboidtiling software. Ensure this directory contains the 'main' file, indicating a correct installation.
 
+3. **Running the Code**:
+   - Without data augmentation: Run **Multicover_process1.py** followed by **Multicover_process2.py**.
+   - With data augmentation: Run **Multicover_aug_process1.py** followed by **Multicover_aug_process2.py**.
+
 By following these steps, you'll be set to generate PMC features for your dataset in the '/result/' directory. Happy computing!
