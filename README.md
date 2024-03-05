@@ -43,7 +43,7 @@ By following these steps, you'll be set to generate PMC features for your datase
 
 ## Visualization
 
-We also provide code snippets for visualizing different aspects of the PMC process, such as Multi-cover, Delaunay slice, and Rhomboid tiling. Here’s how to use them:
+We also provide code snippets for visualizing different objects in Multi-cover theory, such as Multi-cover, Delaunay slice, and Rhomboid tiling. Here’s how to use them:
 
 ### Multi-cover Visualization
 
