@@ -1,0 +1,7 @@
+dataset_name: 'Eea'          # name of the dataset file: dataset_name + '.csv'
+
+save_path_pre: './CoordsFslice/'          # directory that save coordinates and filtration of delaunay slices files
+rhomboidtiling_path: '/home/users/ntu/yipeng00/rhomboid_tiling/rhomboidtiling'          # directory of the rhomboidtiling software, which should contain the file 'main'
+
+
+
