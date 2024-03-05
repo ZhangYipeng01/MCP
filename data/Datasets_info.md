@@ -1,11 +1,23 @@
 # Dataset Overview
 
-This dataset comprises a comprehensive collection of monomer data, meticulously organized into three columns for ease of analysis and application. Each row represents a unique monomer, providing essential details for researchers and practitioners working in the field of chemistry, materials science, and related disciplines. Below is an overview of the dataset structure:
+This dataset comprises a comprehensive collection of monomer data, meticulously organized into three columns. Each row represents a unique monomer, providing essential details for researchers and practitioners working in the field of chemistry, materials science, and related disciplines. Below is an overview of the dataset structure:
 
 ## Columns Description:
 
-**smiles**: The Simplified Molecular Input Line Entry System (SMILES) string uniquely representing the chemical structure of the monomer. SMILES strings are a widely used notation that allows the encoding of molecular structures in a compact, machine-readable format.
+**smiles**: The SMILES string of the monomer.
 
-**index**: A unique identifier assigned to each monomer within the dataset. This index facilitates easy reference and retrieval of specific monomers from the dataset.
+**index**: A unique identifier assigned to each polymer associated with the monomer within the dataset.
 
-**value**: The label associated with each monomer. This could represent a variety of properties or classifications relevant to the monomer, depending on the specific focus of the dataset (e.g., reactivity, polymerization potential, toxicity).
+**value**: The label associated with each monomer. 
+
+We also provide the dataset after augmentation. The files contain four column:
+
+## Columns Description:
+
+**smiles**: The SMILES string of the monomer after augmentation.
+
+**index**: A unique identifier assigned to each polymer associated with the monomer within the dataset.
+
+**value**: The label associated with each monomer. 
+
+**processed_strings**: The SMILES string of the monomer where the placeholder * has been meticulously replaced with the actual atom that occupies the subsequent position in the polymer.
