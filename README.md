@@ -41,7 +41,7 @@ Follow these steps to prepare and process your dataset:
 
 By following these steps, you'll be set to generate PMC features for your dataset in the '/result/' directory.
 
-## Visualizing PMC Components
+## Visualization
 
 We also provide code snippets for visualizing different aspects of the PMC process, such as Multi-cover, Delaunay slice, and Rhomboid tiling. Here’s how to use them:
 
