@@ -39,4 +39,21 @@ Follow these steps to prepare and process your dataset:
    - Without data augmentation: Run **Multicover_process1.py** followed by **Multicover_process2.py**.
    - With data augmentation: Run **Multicover_aug_process1.py** followed by **Multicover_aug_process2.py**.
 
-By following these steps, you'll be set to generate PMC features for your dataset in the '/result/' directory. Happy computing!
+By following these steps, you'll be set to generate PMC features for your dataset in the '/result/' directory.
+
+## Visualizing PMC Components
+
+We also provide code snippets for visualizing different aspects of the PMC process, such as Multi-cover, Delaunay slice, and Rhomboid tiling. Here’s how to use them:
+
+### Multi-cover Visualization
+
+1. **Multi-cover (2D Visualization)**: To visualize Multi-cover in two dimensions, run **Multi-cover_visualization.py**. Remember to adjust the 'Vertexset' value within the code to match the coordinates of your point set.
+
+### Rhomboid Tiling Visualization
+
+2. **Rhomboid Tiling**:
+   - To visualize Rhomboid tiling, you'll need to use the `rhomboidtiling` software with the 'cbifi' and 'rhomboids' options to generate two more file from your oringinal point set file first, then run **rhomboidtiling_visualization.py**
+   - As an example:
+     - `4points.txt` is the original coordinates of the point set file.
+     - `4points_rhomboids.txt` is generated using the 'rhomboids' option.
+     - `4points_rhomboidtiling.txt` is generated using the 'cbifi' option.
