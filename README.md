@@ -4,7 +4,7 @@ Welcome! This guide will help you use the Persistent Multi-cover (PMC) machine l
 
 ## Data Availability
 
-You can find the necessary data for this project in the `/data/` directory. This includes both the original and augmented datasets.
+You can find all the datasets used in this project in the `/data/` directory. This includes both the original and augmented datasets.
 
 ## Getting Started
 
