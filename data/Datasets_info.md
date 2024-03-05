@@ -1,4 +1,5 @@
-Dataset Overview
+\textbf{Dataset Overview}
+
 This dataset comprises a comprehensive collection of monomer data, meticulously organized into three columns for ease of analysis and application. Each row represents a unique monomer, providing essential details for researchers and practitioners working in the field of chemistry, materials science, and related disciplines. Below is an overview of the dataset structure:
 
 Columns Description:
