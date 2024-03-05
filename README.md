@@ -35,4 +35,4 @@ Follow these steps to prepare and process your dataset:
    - `save_path_pre`: The location where you want to save the coordinates and filtration of Delaunay slice file.
    - `rhomboidtiling_path`: The installation directory of the rhomboidtiling software. Ensure this directory contains the 'main' file, indicating a correct installation.
 
-By following these steps, you'll be set to generate PMC features for your dataset in the '/result' directory. Happy computing!
+By following these steps, you'll be set to generate PMC features for your dataset in the '/result/' directory. Happy computing!
