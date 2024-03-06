@@ -1,6 +1,6 @@
 dataset_name: 'Eea'          # name of the dataset file: dataset_name + '.csv'
 
-save_path_pre: './CoordsFslice/'          # directory that save coordinates and filtration of delaunay slices files
+save_path_pre: ''/home/users/ntu/yipeng00/rhomboid_tiling/PMC-based-machine-learning-for-polymer-property-prediction-data-and-code-main/CoordsFslice/''          # directory that save coordinates and filtration of delaunay slices files
 rhomboidtiling_path: '/home/users/ntu/yipeng00/rhomboid_tiling/rhomboidtiling'          # directory of the rhomboidtiling software, which should contain the file 'main'
 
 
