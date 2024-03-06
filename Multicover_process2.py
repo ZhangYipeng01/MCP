@@ -24,12 +24,12 @@ filepath = save_path_pre + '/filtrations/seperate_filtration/'
 savepath = './result/' + project_name + '_character/'
 csv_file = './data/' + project_name + '.csv'
 os.makedirs(savepath, mode = 0o777, exist_ok=True)
-def name_function(index,aug_index):
+def name_function(index):
     name_list = []
     for order in range(max_order):
         for comb in ['all','C','CN','CNO','CO','NO','noCH','noH']:
             if index not in error_indexes:
-                name_list.append(str(index) +'_aug' + str(aug_index) + '_' + comb + '_fslices(k=' + str(order+1) + ').txt')
+                name_list.append(str(index) + '_' + comb + '_fslices(k=' + str(order+1) + ').txt')
     return name_list
 
 print(tda.PreEstimate_datasize(path_data = save_path_pre + '/augmented/', save_path = savepath, project_name = project_name))
