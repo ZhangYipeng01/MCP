@@ -17,7 +17,7 @@ savepath = save_path_pre + '/filtrations/seperate_filtration/'
 max_order = 4
 mc.SeperateFslices_folder(filepath, savepath, max_order)
 
-### transfer the filtration into betti curve table
+### transfer the filtration into PMC feature vector
 
 error_indexes = []
 filepath = save_path_pre + '/filtrations/seperate_filtration/'
