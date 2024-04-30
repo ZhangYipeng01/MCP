@@ -262,8 +262,7 @@ def SMILEtoDenseFingerprint(smile_string):
     return embeddings
 
 def SMILEtoMol(smile_string):
-    # Replace asterisks with placeholder atoms (e.g., bromine)
-    smile_string = smile_string.replace('*', 'Br')
+    smile_string = cap_with_next_atom(smile_string)
     if is_valid_smiles(smile_string) == False:
         return 'unsuccessful'
     max_tries = 10
