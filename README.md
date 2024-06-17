@@ -1,6 +1,6 @@
 # Guide to Using PMC for Polymer Property Prediction
 
-Welcome! This guide will help you use the Persistent Multi-cover (PMC) machine learning approach for predicting polymer properties. We'll walk you through obtaining the data, setting up your environment, and executing the code to generate PMC features from your dataset.
+Welcome! This guide will help you use the Multi-cover persistence (MCP) machine learning approach for predicting polymer properties. We'll walk you through obtaining the data, setting up your environment, and executing the code to generate MCP features from your dataset.
 
 ## Data Availability
 
