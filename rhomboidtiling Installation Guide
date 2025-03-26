@@ -1,0 +1,37 @@
+# Reference installation process for rhomboidtiling (for reference only)
+# NOTE: Replace all file paths below with your own working paths
+
+# Step 0: Install mamba into base environment (only once)
+conda activate base
+conda install mamba -n base -c conda-forge -y
+
+# Step 1: Create and activate a new environment
+mamba create -n RTCN -c conda-forge cxx-compiler cmake make mpfr gmp boost wget tar zlib -y
+conda activate RTCN
+
+# Step 2: Download and build CGAL 4.9
+cd /home/yipeng001/
+wget https://github.com/CGAL/cgal/releases/download/releases%2FCGAL-4.9/CGAL-4.9.tar.xz
+tar -xf CGAL-4.9.tar.xz
+mkdir -p CGAL-4.9/build_local
+cd CGAL-4.9/build_local
+
+cmake .. -DCMAKE_INSTALL_PREFIX=/home/yipeng001/CGAL-4.9/install \
+         -DCMAKE_BUILD_TYPE=Release \
+         -DCMAKE_PREFIX_PATH=$CONDA_PREFIX
+
+make -j4
+make install
+
+# Step 3: Clone and build rhomboidtiling
+cd /home/yipeng001/
+git clone https://github.com/geoo89/rhomboidtiling.git
+cd rhomboidtiling
+
+# IMPORTANT: Please manually edit catch2/catch.hpp
+# At line 8164, remove or comment out: '>= MINSIGSTKSZ ? 32768 : MINSIGSTKSZ'
+
+mkdir -p build
+cd build
+cmake .. -DCMAKE_PREFIX_PATH=/home/yipeng001/CGAL-4.9/install
+make -j4
