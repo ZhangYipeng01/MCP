@@ -8,6 +8,8 @@ conda install mamba -n base -c conda-forge -y
 # Step 1: Create and activate a new environment
 mamba create -n RTCN -c conda-forge cxx-compiler cmake make mpfr gmp boost wget tar zlib -y
 conda activate RTCN
+## package version reference: libgcc == 15.1.0, g++ (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0, cmake == 3.16.3, make == 4.2.1
+## mpfr == 4.2.1, gmp === 6.3.0, gmpy2 == 2.2.1, zlib == 1.2.13
 
 # Step 2: Download and build CGAL 4.9
 cd /home/yipeng001/
